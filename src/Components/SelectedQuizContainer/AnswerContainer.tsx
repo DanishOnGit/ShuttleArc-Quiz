@@ -8,7 +8,7 @@ export function AnswerContainer({
   return (
     <>
       <Box>
-          <Heading>{question.question}</Heading>
+          <Heading fontSize="xx-large">{question.question}</Heading>
           
           <AnswerOptionContainer question={question} />
       </Box>
