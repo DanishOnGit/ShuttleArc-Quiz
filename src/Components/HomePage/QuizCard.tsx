@@ -7,21 +7,36 @@ type QuizCardProps = {
 };
 
 export function QuizCard({ item }: QuizCardProps) {
+
+  const QuizCardStyleProps = {
+    minHeight:"10rem",
+    backgroundImage:`url(${item.image})`,
+    backgroundSize:"100% 100%",
+    
+    backgroundPosition:"center",
+    backgroundRepeat:"no-repeat",
+    borderRadius:"1rem",
+    border:"2px",
+    borderColor:"gray.200",
+    boxShadow:"xs",
+    p:"0.5rem",
+  }
   return (
     <>
       <Link to={`quiz/${item._id}`}>
         <Box
-          minHeight="10rem"
-          backgroundImage={`url(${item.image})`}
-          backgroundSize="100% 100%"
-          // backgroundSize="contain"
-          backgroundPosition="center"
-          backgroundRepeat="no-repeat"
-          borderRadius="1rem"
-          border="2px"
-          borderColor="gray.200"
-          boxShadow="xs"
-          p="0.5rem"
+        {...QuizCardStyleProps}
+          // minHeight="10rem"
+          // backgroundImage={`url(${item.image})`}
+          // backgroundSize="100% 100%"
+          
+          // backgroundPosition="center"
+          // backgroundRepeat="no-repeat"
+          // borderRadius="1rem"
+          // border="2px"
+          // borderColor="gray.200"
+          // boxShadow="xs"
+          // p="0.5rem"
         >
           <Heading as="h3">{item.categoryName}</Heading>
         </Box>

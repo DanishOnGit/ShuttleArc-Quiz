@@ -10,7 +10,6 @@ export function CategoryCard({ item }: CategoryCardProps) {
     <>
       <Box
         backgroundImage={`url(${item.image})`}
-        // backgroundSize="100% 100%"
         backgroundSize="contain"
         backgroundPosition="center"
         backgroundRepeat="no-repeat"

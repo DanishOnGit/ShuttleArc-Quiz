@@ -14,7 +14,7 @@ export function QuizList() {
         <SimpleGrid columns={[1, null, 3]} spacing="2rem">
           {quizzes.map(
             (item: Quiz): JSX.Element => (
-              <QuizCard item={item} />
+              <QuizCard key={item._id} item={item} />
             )
           )}
         </SimpleGrid>
