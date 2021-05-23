@@ -51,7 +51,7 @@ export function OptionContainer({ question }: { question: Question }) {
     onChange: updateAnswer,
   });
 
-  const group = getRootProps();
+   getRootProps();
   return (
     <SimpleGrid columns={[1, null, 2]} spacing="2rem">
       {options.map((option: Option): JSX.Element => {

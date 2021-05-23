@@ -8,7 +8,7 @@ import { AnswerContainer } from "./AnswerContainer";
 export function SelectedQuizContainer() {
   const {
     state: { selectedQuiz },
-    dispatch,
+    
   } = useQuiz();
 
   const [reviewAnswers,setReviewAnswers] = useState(false)

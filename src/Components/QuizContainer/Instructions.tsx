@@ -1,4 +1,4 @@
-import { Box, Heading, Text } from "@chakra-ui/layout";
+import { Box, Heading } from "@chakra-ui/layout";
 import { MdSettings } from "react-icons/md";
 
 import { ListItem, ListIcon, UnorderedList, Button } from "@chakra-ui/react";

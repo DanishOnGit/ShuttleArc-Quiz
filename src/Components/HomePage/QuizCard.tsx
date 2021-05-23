@@ -1,5 +1,5 @@
 import { Box, Heading } from "@chakra-ui/layout";
-import { Category, Quiz } from "../../Database/quiz.type";
+import { Quiz } from "../../Database/quiz.type";
 import { Link } from "react-router-dom";
 
 type QuizCardProps = {

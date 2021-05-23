@@ -1,4 +1,4 @@
-import { Box, Flex, Spacer } from "@chakra-ui/layout";
+import {  Flex } from "@chakra-ui/layout";
 import { Logo } from "./Logo";
 import { MenuItems } from "./MenuItems";
 

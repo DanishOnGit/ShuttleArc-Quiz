@@ -1,4 +1,4 @@
-import { Box, Flex, Spacer, Text } from "@chakra-ui/layout";
+import { Flex, Text } from "@chakra-ui/layout";
 import { Link } from "react-router-dom";
 
 export function MenuItems() {

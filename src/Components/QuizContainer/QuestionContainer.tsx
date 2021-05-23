@@ -1,5 +1,5 @@
 import { Button } from "@chakra-ui/button";
-import { Box, Heading, Text } from "@chakra-ui/layout";
+import { Box, Heading } from "@chakra-ui/layout";
 import { useQuiz } from "../../Contexts/quizContext";
 import { OptionContainer } from "./OptionContainer";
 import { QuestionContainerProps } from "./QuestionContainerProps.type";

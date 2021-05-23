@@ -4,10 +4,17 @@ import { ACTIONTYPE, InitialStateType } from "./quizContext.type";
 export const initialState: InitialStateType = {
   selectedQuiz: null,
   currentQuestionNumber: 1,
+  name: "",
 };
 
 export function quizReducer(state: InitialStateType, action: ACTIONTYPE) {
   switch (action.type) {
+    case "SET_NAME": {
+      return {
+        ...state,
+        name: action.payload,
+      };
+    }
     case "SELECTED_QUIZ": {
       return { ...state, selectedQuiz: action.payload.quiz };
     }
@@ -31,7 +38,6 @@ export function quizReducer(state: InitialStateType, action: ACTIONTYPE) {
           },
           0
         );
-        
 
         return {
           ...state,
@@ -71,7 +77,9 @@ export function quizReducer(state: InitialStateType, action: ACTIONTYPE) {
 
     case "RESET": {
       return {
-        ...initialState,
+        ...state,
+        selectedQuiz: null,
+        currentQuestionNumber: 1,
       };
     }
 
