@@ -8,10 +8,6 @@ export function MenuItems() {
         <Link to="/">
           <Text p="0 1rem">Home</Text>
         </Link>
-        
-        <Link to="/about">
-          <Text>About</Text>
-        </Link>
       </Flex>
     </>
   );

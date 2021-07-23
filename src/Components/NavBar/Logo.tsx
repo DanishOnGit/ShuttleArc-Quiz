@@ -1,11 +1,11 @@
-import { Box, Text } from "@chakra-ui/layout";
-
+import { Box } from "@chakra-ui/layout";
+import { Image } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
+import logo from "../../Database/Assets/logo.svg"
 export function Logo() {
   return (
     <Box>
-      <Text fontSize="lg" fontWeight="bold" mr="2rem">
-        LOGO.
-      </Text>
+     <Link to="/"><Image src={logo} boxSize="60px" alt="Logo"/></Link>
     </Box>
   );
 }

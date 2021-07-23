@@ -14,7 +14,7 @@ export function Instructions({ setShowQuiz }: InstructionsProps) {
         flexDirection="column"
         justifyContent="center"
         alignItems="center"
-        m="4rem"
+        m="4rem 0"
       >
         <Heading as="h4">Instructions</Heading>
         <UnorderedList listStyleType="none" textAlign="left">

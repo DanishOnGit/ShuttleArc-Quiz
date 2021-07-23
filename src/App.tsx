@@ -8,7 +8,7 @@ import { HomePageModal } from "./Components/HomePage/HomePageModal";
 function App() {
   const [showModal, setShowModal] = useState(true);
   return (
-    <Box className="App" p="0 2rem" mt="2rem">
+    <Box className="App" m={{base:"1rem",md:"2rem"}}>
       {showModal && <HomePageModal setShowModal={setShowModal} />}
       <NavBar />
       <Routes>

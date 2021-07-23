@@ -24,7 +24,8 @@ export function SelectedQuizContainer() {
           </Text>
           <Text textAlign="center" fontSize="1.5rem" fontWeight="extrabold">Your Score: {selectedQuiz?.score}</Text>
           <Button onClick={()=>setReviewAnswers(true)} m="1rem">Review Answers</Button>
-          <Box w="70vw" m="auto">
+          <Box w={{base:"100%",md:"70vw"}} m="auto">
+            <Box bgColor="gray.400" height="2px"></Box>
             <SimpleGrid columns={[1, null, 1]} spacing="2rem">
               { reviewAnswers &&  selectedQuiz?.questions.map(
                 (question: Question, index: number): JSX.Element => (

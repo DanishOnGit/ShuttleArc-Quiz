@@ -8,7 +8,7 @@ export function QuizList() {
   return (
     <>
       <Box w="70vw" m="auto">
-        <Heading as="h2" p="1rem 0">
+        <Heading as="h2" p="1rem 0" fontWeight="light">
           Pick Your Quiz Category !
         </Heading>
         <SimpleGrid columns={[1, null, 3]} spacing="2rem">

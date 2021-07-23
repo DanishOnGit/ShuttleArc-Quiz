@@ -70,7 +70,7 @@ export const quiz2: Quiz = {
       _id: "4",
       points: 2,
       negativePoints: 1,
-      question: "n Which Stadium India Open Grand Prix Gold tournament held?",
+      question: "In Which Stadium India Open Grand Prix Gold tournament held?",
       options: [
         {
           _id: "1",

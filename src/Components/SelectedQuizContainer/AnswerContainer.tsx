@@ -7,9 +7,8 @@ export function AnswerContainer({
 }: AnswerContainerProps) {
   return (
     <>
-      <Box>
-          <Heading fontSize="xx-large">{question.question}</Heading>
-          
+      <Box m="1rem">
+          <Heading fontSize={{base:"xl",md:"x-large"}} mb="2">{question.question}</Heading>  
           <AnswerOptionContainer question={question} />
       </Box>
     </>

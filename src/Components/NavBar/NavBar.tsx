@@ -5,7 +5,7 @@ import { MenuItems } from "./MenuItems";
 export function NavBar() {
   return (
     <>
-      <Flex>
+      <Flex px="2.5">
         <Logo />
         <MenuItems />
       </Flex>

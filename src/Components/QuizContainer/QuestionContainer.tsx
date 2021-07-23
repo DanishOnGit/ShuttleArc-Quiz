@@ -25,8 +25,8 @@ export function QuestionContainer({
   
   return (
     <>
-      <Box m="4rem auto" w={"70vw"} >
-        <Heading mb="2rem">{question.question}</Heading>
+      <Box m="4rem auto" w={{base:"auto",md:"70vw"}} >
+        <Heading mb="2rem" fontSize={{base:"xl",md:"3xl"}}>{question.question}</Heading>
         <OptionContainer question={question} />
         <Button onClick={updateQuestionOrSubmitQuiz} m="1rem 0" bgColor="gray.300">
           {currentQuestionNumber !== selectedQuiz?.totalQuestions
